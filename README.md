@@ -51,36 +51,36 @@ Before running this project, ensure you have the following:
 =========================================
 
 # build docker images
-docker build -t tag-name .
+docker build -t tag_name . <br>
 docker build -t mywebapp .
-
 Recommended method ====> to give tagname use ==== docker hub username/repository name:tag name(name of the image)
 <br> docker build -t test123/demo:mywebapp .
+
 =========================================
 
 # To pull docker images from docker hub
-docker pull image_name:tag
+docker pull image_name:tag <br>
 docker pull test123/demo:mywebapp
 
 =========================================
 
 # To run Docker container
 docker run -d -p 80:80 test123/demo:mywebapp
-
 -d → run in detached mode
 -p 80:80 → map port 80 of the container to port 80 on EC2
+
 =========================================
 
 # verify docker container is running
 docker ps
-
 you will get container ID
+
 =========================================
 
 # Accessing the webapp over the internet(on browser)
 Enter http://<ec2-public-ip>:port number in url
-
 Example: http://128.31.3.4:8080
+
 =======================================
 
 # stop docker container
