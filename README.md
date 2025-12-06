@@ -38,7 +38,7 @@ Before running this project, ensure you have the following:
 - Docker installed on your local machine or server.  
 - AWS account with an EC2 instance running (Ubuntu recommended).  
 - Security group configured to allow inbound traffic on the application port (e.g.8080 or port on which you are running your application). ** very very imp  **
-# go to security tab of you EC2 machine ===> click security group (alpha numeric number)  ===> click on inbound rule ===> edit inbound rule ===> add your desired port ===> save 
+- To add traffice rule: <br> go to security tab of you EC2 machine ===> click security group (alpha numeric number)  ===> click on inbound rule ===> edit inbound rule ===> add your desired port ===> save 
 
 ---
 
